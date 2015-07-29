@@ -41,16 +41,16 @@ This decorator also works with \*args and \*\*kwargs
 .. code:: python
 
     @type_corrector(int)
-    def mult(\*numbers):
+    def mult(*numbers):
         result = 1
         for num in numbers:
-            result \*\= num
+            result *= num
         return result
 
 .. code:: python
 
     @type_corrector(int)
-    def kw_mult(\*\*kwargs):
+    def kw_mult(**kwargs):
         first = kwargs.get('first')
         second = kwargs.get('second')
         third = kwargs.get('third')
