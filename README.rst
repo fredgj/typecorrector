@@ -15,7 +15,12 @@ the same time allow some margin of error.
 I'm not sure if this is a good idea, or if it's a good approach. It was
 mostly developed for fun while playing around with decorators.
 
-       
+Installation
+------------
+
+pip install typecorrector
+
+
 Usage
 -----
 First import type_corrector from typecorrector:
