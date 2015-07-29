@@ -24,6 +24,8 @@ First import type_corrector from typecorrector:
 
     from typecorrector import type_corrector
 
+Then you can decorate your functions with type_corrector
+
 .. code:: python
 
     @type_corrector(int, int)
@@ -42,7 +44,7 @@ This decorator also works with \*args and \*\*kwargs
     def mult(\*numbers):
         result = 1
         for num in numbers:
-            result \*= num
+            result \*\= num
         return result
 
 .. code:: python
