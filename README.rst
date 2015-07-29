@@ -31,10 +31,17 @@ Then you can decorate your functions with type_corrector
     @type_corrector(int, int)
     def add(x,y):
         return x+y
+
+    
+    @type_corrector(float, float)
+    def div(x,y):
+        return x/y
        
 
 A call to add(1,'2') will cast '2' to an int, since that is what we
 specified as the type of the second paramater in the decorator.
+We can also call div as div('10', '3'), and div will return 3.3333333333333335
+as expected.
 
 This decorator also works with \*args and \*\*kwargs
 
