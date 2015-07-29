@@ -1,9 +1,3 @@
-
-# If a user passes in an argument of another it will try to
-# cast the argument to the desired type.
-# Not sure if this is a useful or smart thing to have at all, just made
-# for fun
-
 from functools import wraps
 
 
