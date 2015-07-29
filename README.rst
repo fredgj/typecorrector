@@ -1,6 +1,7 @@
 Type corrector
 ==============
 
+
 Intro
 -----
 
@@ -18,20 +19,19 @@ mostly developed for fun while playing around with decorators.
 Usage
 -----
 
-.. code:: python
 from typecorrector import type_corrector
 
-.. code:: python
 @type_corrector(int, int)
 def add(x,y):
     return x+y
        
+
 A call to add(1,'2') will cast '2' to an int, since that is what we
 specified as the type of the second paramater in the decorator.
 
 This decorator also works with \*args and \*\*kwargs
 
-.. code:: python
+
 @type_corrector(int)
 def mult(\*numbers):
     result = 1
@@ -39,13 +39,14 @@ def mult(\*numbers):
         result \*= num
     return result
 
-.. code:: python
+
 @type_corrector(int)
 def kw_mult(\*\*kwargs):
     first = kwargs.get('first')
     second = kwargs.get('second')
     third = kwargs.get('third')
     return first * second * third
+
 
 This allows us to call the functions like this:
 mult('2', '3', '4')
@@ -56,6 +57,7 @@ the both parameters of add are supposed to be integers and mult and kw_mult
 also work with integers. By decorating the functions this it should be a clear
 hint what types we want to operate with, even though it allows some margin of
 error.
+
 
 Known issues
 ------------
