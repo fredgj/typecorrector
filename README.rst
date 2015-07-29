@@ -6,7 +6,7 @@ Intro
 -----
 
 Type corrector is module that contains the decorator type_corrector.
-This decorator let's the user specify what types the 
+This decorator lets the user specify what types the 
 arguments to a function should have. It's not 100% safe to use as it
 might result in a ValueError or TypeError if the user is not careful enough.
 The motivation behing this module was to find a way that makes it easier
