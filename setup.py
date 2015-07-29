@@ -1,14 +1,14 @@
 from setuptools import setup
 
 __author__ = 'Fredrik Gjertsen'
-__doc__ = open('readme.rst').read()
+__doc__ = open('README.rst').read()
 __description__ = 'A decorator meant to give hints about a functions parameter types as well as allow a margin of error'
 
 setup(name='typecorrector',
-      version=0.1,
+      version='0.1.0',
       description=__description__,
       long_description=__doc__,
-      author=__author__
+      author=__author__,
       author_email='f.gjertsen@gmail.com',
       url='https://github.com/fredgj/typecorrector',
       packages=['typecorrector'],
@@ -22,4 +22,4 @@ setup(name='typecorrector',
                    'Programming Language :: Python :: Implementation :: CPython',
                    'Topic :: Utilities'
                   ],
-      keyword='types, type hints, type hinting')
+      keywords='types, type hints, type hinting')
