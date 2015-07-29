@@ -21,8 +21,8 @@ Usage
 
 from typecorrector import type_corrector
 
-@type_corrector(int, int)
-def add(x,y)\:
+|@type_corrector(int, int)
+|def add(x,y):
     return x+y
        
 
@@ -32,12 +32,12 @@ specified as the type of the second paramater in the decorator.
 This decorator also works with \*args and \*\*kwargs
 
 
-@type_corrector(int)
-def mult(\*numbers):
-    result = 1
-    for num in numbers:
-        result \*= num
-    return result
+|@type_corrector(int)
+|def mult(\*numbers):
+|    result = 1
+|    for num in numbers:
+|        result \*= num
+|    return result
 
 
 @type_corrector(int)
