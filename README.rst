@@ -18,12 +18,17 @@ mostly developed for fun while playing around with decorators.
        
 Usage
 -----
+First import type_corrector from typecorrector:
 
-from typecorrector import type_corrector
+.. code:: python
 
-|@type_corrector(int, int)
-|def add(x,y):
-    return x+y
+    from typecorrector import type_corrector
+
+.. code:: python
+
+    @type_corrector(int, int)
+    def add(x,y):
+        return x+y
        
 
 A call to add(1,'2') will cast '2' to an int, since that is what we
@@ -31,21 +36,23 @@ specified as the type of the second paramater in the decorator.
 
 This decorator also works with \*args and \*\*kwargs
 
+.. code:: python
 
-|@type_corrector(int)
-|def mult(\*numbers):
-|    result = 1
-|    for num in numbers:
-|        result \*= num
-|    return result
+    @type_corrector(int)
+    def mult(\*numbers):
+        result = 1
+        for num in numbers:
+            result \*= num
+        return result
 
+.. code:: python
 
-@type_corrector(int)
-def kw_mult(\*\*kwargs):
-    first = kwargs.get('first')
-    second = kwargs.get('second')
-    third = kwargs.get('third')
-    return first * second * third
+    @type_corrector(int)
+    def kw_mult(\*\*kwargs):
+        first = kwargs.get('first')
+        second = kwargs.get('second')
+        third = kwargs.get('third')
+        return first * second * third
 
 
 This allows us to call the functions like this:
