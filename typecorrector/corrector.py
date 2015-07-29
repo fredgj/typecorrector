@@ -47,10 +47,10 @@ def type_corrector(*types):
     def wrapper(func):
         @wraps(func)
         def _wrapper(*args, **kwargs):
-            _args = _multi_type_fix(args, types) \
-                     if len(types) > 1 else _single_type_fix(args, types[0])
-            kwargs_values = _multi_type_fix(kwargs.values(), types) \
-                     if len(types) > 1 else _single_type_fix(kwargs.values(), types[0])
+            _args = _multi_type_fix(args, types) if len(types) > 1 \
+                    else _single_type_fix(args, types[0])
+            kwargs_values = _multi_type_fix(kwargs.values(), types) if len(types) > 1 \
+                    else _single_type_fix(kwargs.values(), types[0])
            
             zipped = zip(kwargs.keys(), kwargs_values)
             for key, value in zipped:
