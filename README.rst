@@ -22,7 +22,7 @@ Usage
 from typecorrector import type_corrector
 
 @type_corrector(int, int)
-def add(x,y):
+def add(x,y)\:
     return x+y
        
 
