@@ -5,7 +5,7 @@ __doc__ = open('README.rst').read()
 __description__ = 'A decorator meant to give type hints about function parameters as well as allow a margin of error'
 
 setup(name='typecorrector',
-      version='0.2.1',
+      version='0.2.2',
       description=__description__,
       long_description=__doc__,
       author=__author__,
