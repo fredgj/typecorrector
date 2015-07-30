@@ -18,7 +18,7 @@ def _correct_type(obj, _type):
 
 
 # Pairs each object and type as tuples in a list,
-# then loops through this list and yield each object,
+# then loops through this list and yields each object,
 # if possible, after we have made sure the object 
 # has the same type as the type in its tuple.
 def _multi_type_fix(obj_seq, type_seq):
@@ -26,7 +26,8 @@ def _multi_type_fix(obj_seq, type_seq):
     for obj, _type in zipped:
         yield _correct_type(obj, _type)
 
-# Loops true a sequence of objects and yield
+
+# Loops true a sequence of objects and yields
 # each object, if possible, after we have made sure
 # the object has the same type as the type passed in
 # as an argument.
