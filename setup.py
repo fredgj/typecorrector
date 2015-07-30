@@ -3,6 +3,7 @@ from setuptools import setup
 __author__ = 'Fredrik Gjertsen'
 __doc__ = open('README.rst').read()
 __description__ = 'A decorator meant to give type hints about function parameters as well as allow a margin of error'
+
 setup(name='typecorrector',
       version='0.2.1',
       description=__description__,
