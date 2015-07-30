@@ -59,7 +59,6 @@ This decorator also works with \*args and \*\*kwargs
             result *= num
         return result
 
-.. code:: python
 
     @type_corrector(int)
     def kw_mult(**kwargs):
@@ -70,8 +69,8 @@ This decorator also works with \*args and \*\*kwargs
 
 
 This allows us to call the functions like this:
-mult('2', '3', '4')
-kw_mult(first='2', second='3', third='3')
+* mult('2', '3', '4') 
+* kw_mult(first='2', second='3', third='4')
 
 By looking at the function definitions we can still see that
 the both parameters of add are supposed to be integers and mult and kw_mult
