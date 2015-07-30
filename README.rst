@@ -15,6 +15,7 @@ the same time allow some margin of error.
 I'm not sure whether this is a good idea or not, or if it's a good approach. It was
 mostly developed for fun while playing around with decorators.
 
+
 Installation
 ------------
 
@@ -23,6 +24,7 @@ pip install typecorrector
 
 Usage
 -----
+
 First import type_corrector from the typecorrector module:
 
 .. code:: python
@@ -82,6 +84,7 @@ allows some margin of error.
 
 Known issues
 ------------
+
 - When calling help on a decorated function the parameters are not shown
   correctly, instead it will just say <function name>(\*args, \*\*kwargs).
   Thanks to the functools.wraps decorator the docstring of a wrapped function
@@ -89,3 +92,12 @@ Known issues
 - When using the inspect module to get the argument specification with
   inspect.getargspec or getting the source code from inspect.getsourcelines
   it will fail and show the wrapped function instead.
+
+
+Bugs, problems and new features
+-------------------------------
+
+If you find any bugs, have any problems, or maybe you just want to request a 
+new feature, then use the `issue tracker
+<https://github.com/fredgj/typecorrector/issues>`
+
