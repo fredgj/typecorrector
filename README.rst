@@ -73,11 +73,11 @@ This allows us to call the functions like this:
 - mult('2', '3', '4') 
 - kw_mult(first='2', second='3', third='4')
 
-By looking at the function definitions we can still see that
-the both parameters of add are supposed to be integers and mult and kw_mult
-also work with integers. By decorating the functions this it should be a clear
-hint what types we want to operate with, even though it allows some margin of
-error.
+When looking at the function definitions of add, mult and kw_mult we can easily
+see that the arguments are supposed to be integers.
+By decorating the functions like this it should be a clear
+hint what types we want the parameters to be passed in as, even though it 
+allows some margin of error.
 
 
 Known issues
