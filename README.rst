@@ -88,4 +88,4 @@ Also, when using inspect to get the argument specification with
 inspect.getargspec or getting the source code from inspect.getsourcelines
 it will fail.
 Thanks to the functools.wraps decorator the docstring of a wrapped function
-will still shown correctly.
+will still be shown correctly.
