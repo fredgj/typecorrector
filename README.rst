@@ -23,7 +23,7 @@ pip install typecorrector
 
 Usage
 -----
-First import type_corrector from typecorrector:
+First import type_corrector from the typecorrector module:
 
 .. code:: python
 
