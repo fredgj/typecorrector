@@ -69,6 +69,7 @@ This decorator also works with \*args and \*\*kwargs
 
 
 This allows us to call the functions like this:
+
 - mult('2', '3', '4') 
 - kw_mult(first='2', second='3', third='4')
 
