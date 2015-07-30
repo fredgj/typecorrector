@@ -99,5 +99,5 @@ Bugs, problems and new features
 
 If you find any bugs, have any problems, or maybe you just want to request a 
 new feature, then use the `issue tracker
-<https://github.com/fredgj/typecorrector/issues>`
+<https://github.com/fredgj/typecorrector/issues>`_.
 
