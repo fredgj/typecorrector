@@ -1,6 +1,8 @@
 Type corrector
 ==============
 
+This project has merged with typesys and will no longer be maintained.
+Typesys can be found `here https://github.com/fredgj/typesys`_.
 
 Intro
 -----
